@@ -55,72 +55,47 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent">
 
-        <Button
-            android:id="@+id/btn_home"
-            android:layout_width="wrap_content"
-            android:layout_weight="1"
-            android:layout_height="60dp"
-            android:background="@drawable/main_but"
-            android:text="홈"
-            android:textSize="12dp"
-            android:textColor="@color/white"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/btn_post"
-            app:layout_constraintHorizontal_bias="0.54"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <Button
-            android:id="@+id/btn_post"
-            android:layout_width="wrap_content"
+        <ImageView
+            android:id="@+id/iv_main_home"
+            android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_weight="1"
-            android:background="@drawable/main_but"
-            android:text="게시판"
-            android:textColor="@color/white"
-            android:textSize="12dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/btn_schedule"
-            app:layout_constraintStart_toEndOf="@+id/btn_home" />
+            app:srcCompat="@drawable/main_home"
+            android:background="@drawable/main_but"/>
 
-        <Button
-            android:id="@+id/btn_schedule"
-            android:layout_width="wrap_content"
+        <ImageView
+            android:id="@+id/iv_main_post"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/main_post"
+            android:background="@drawable/main_but"
+            />
+        <ImageView
+            android:id="@+id/iv_main_schedule"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/main_schedule"
+            android:background="@drawable/main_but"/>
+
+        <ImageView
+            android:id="@+id/iv_main_group"
+            android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_weight="1"
             android:background="@drawable/main_but"
-            android:text="일정"
-            android:textColor="@color/white"
-            android:textSize="12dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/btn_group"
-            app:layout_constraintStart_toEndOf="@+id/btn_post" />
+            app:srcCompat="@drawable/peopleicon"
+            app:tint="#746078" />
 
-        <Button
-            android:id="@+id/btn_group"
-            android:layout_width="wrap_content"
+        <ImageView
+            android:id="@+id/iv_main_talk"
+            android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_weight="1"
-            android:background="@drawable/main_but"
-            android:text="그룹"
-            android:textColor="@color/white"
-            android:textSize="12dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/btn_talk"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/btn_schedule" />
+            app:srcCompat="@drawable/main_talk"
+            android:background="@drawable/main_but"/>
 
 
-        <Button
-            android:id="@+id/btn_talk"
-            android:layout_width="wrap_content"
-            android:layout_height="60dp"
-            android:layout_weight="1"
-            android:background="@drawable/main_but"
-            android:text="톡"
-            android:textColor="@color/white"
-            android:textSize="12dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/btn_group" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
