@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_post"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/but_every"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="176dp"
+        android:background="@drawable/post_but"
+        android:text="자유 게시판"
+        android:textSize="19dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/but_contest"
+        app:layout_constraintEnd_toStartOf="@+id/but_hobby"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <Button
+        android:id="@+id/but_hobby"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="19dp"
+        android:background="@drawable/post_but"
+        android:text="취미 게시판"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/but_every"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/but_every"
+        app:layout_constraintTop_toTopOf="@+id/but_every" />
+
+    <Button
+        android:id="@+id/but_external"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/post_but"
+        android:text="대외활동 게시판"
+        android:textSize="19dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/but_contest"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/but_contest"
+        app:layout_constraintTop_toTopOf="@+id/but_contest" />
+
+    <Button
+        android:id="@+id/but_contest"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_marginEnd="10dp"
+
+        android:layout_marginBottom="264dp"
+        android:background="@drawable/post_but"
+        android:textSize="19dp"
+        android:text="대회 / 공모전 게시판"
+        android:inputType="textMultiLine"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/but_study"
+        app:layout_constraintEnd_toStartOf="@+id/but_external"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/but_every" />
+
+    <Button
+        android:id="@+id/but_study"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/post_but"
+        android:text="스터디 게시판"
+        android:textSize="19dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/but_contest"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/but_contest" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:text="게시판 목록"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:background="@drawable/rectangle_transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

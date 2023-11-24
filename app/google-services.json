@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "177703247362",
+    "project_id": "howabuotthis",
+    "storage_bucket": "howabuotthis.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:177703247362:android:7ed10c281cb6f0e788911b",
+        "android_client_info": {
+          "package_name": "com.example.myapp_20"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFNXOa3OsOuhF_ron--Yr67Jvx_cKUVPw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
