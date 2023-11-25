@@ -76,7 +76,7 @@ public class ScheduleFragment extends Fragment
                             for(DataSnapshot dataSnapshot1 : snapshot.getChildren())
                             {
                                 ScheduleInfo scheduleInfo = dataSnapshot1.getValue(ScheduleInfo.class);
-                                if(scheduleInfo.getDate().equals(day))
+                                if(scheduleInfo.getDate().equals(day) && scheduleInfo.getGroupId().equals(groupInfo.getGroupId()))
                                     arrayList.add(scheduleInfo);
                                 adapter.notifyDataSetChanged();
                             }
@@ -110,13 +110,15 @@ public class ScheduleFragment extends Fragment
                         for(DataSnapshot dataSnapshot : snapshot.getChildren())
                         {
                             GroupInfo groupInfo = dataSnapshot.getValue(GroupInfo.class);
-                            databaseReference.child("Schedule").addListenerForSingleValueEvent(new ValueEventListener() {
+                            databaseReference.child("Schedule").addListenerForSingleValueEvent(new ValueEventListener()
+                            {
                                 @Override
-                                public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                public void onDataChange(@NonNull DataSnapshot snapshot)
+                                {
                                     for(DataSnapshot dataSnapshot1 : snapshot.getChildren())
                                     {
                                         ScheduleInfo scheduleInfo = dataSnapshot1.getValue(ScheduleInfo.class);
-                                        if(scheduleInfo.getDate().equals(day))
+                                        if(scheduleInfo.getDate().equals(day) && scheduleInfo.getGroupId().equals(groupInfo.getGroupId()))
                                             arrayList.add(scheduleInfo);
                                         adapter.notifyDataSetChanged();
                                     }
